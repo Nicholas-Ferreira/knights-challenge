@@ -20,3 +20,7 @@ Install docker in device and run command below
 docker compose up
 ```
 
+Init application in: http://localhost:8081
+
+
+
