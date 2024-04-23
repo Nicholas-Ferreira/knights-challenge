@@ -1,0 +1,29 @@
+
+.home-container{  
+  width: 100%;
+  height: 100%; 
+}
+
+.wrapper-header{
+  display: flex;
+  align-items: center; 
+  gap: 60px;
+  margin-top:40px;
+}
+
+.home-container .title{
+  font-family: 'Rocher';
+  font-size: 2.5rem;
+  color: var(--green-color); 
+  text-align: center;
+  font-palette: --Green;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper-header{
+    flex-direction: column;
+    gap: 40px;
+  }
+}

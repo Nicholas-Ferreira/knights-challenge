@@ -1,0 +1,215 @@
+
+.create-container {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Rocher';
+  font-size: 2.5rem;
+  color: var(--green-color);
+  text-align: center;
+  font-palette: --Green;
+  margin-bottom: 1rem;
+}
+
+.wrapper-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.weapon-added {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.weapon-added > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  background: var(--vt-c-black-soft);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--vt-c-divider-light-1);
+}
+
+.weapon-added > div > span {
+  display: flex;
+  word-break: break-all;
+  background-color: var(--vt-c-divider-light-1);
+  color: var(--vt-c-text-dark-2);
+  padding: 5px 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid var(--vt-c-divider-light-1);
+  min-width: 100px;
+}
+
+.form-item {
+  background-color: var(--vt-c-divider-light-1);
+  color: var(--vt-c-text-dark-2);
+  padding: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid var(--vt-c-divider-light-1);
+  outline: none;
+}
+
+.form-submit {
+  background-color: var(--green-color);
+  color: var(--vt-c-white);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--vt-c-black-mute);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form-button-remove {
+  background-color: var(--red-color);
+  color: var(--vt-c-white);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--vt-c-black-mute);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.form-button-added {
+  background-color: var(--blue-color);
+  color: var(--vt-c-white);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--vt-c-black-mute);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* SELECT */
+.select-wrapper .select-placeholder {
+  color: var(--vt-c-text-dark-3);
+}
+
+
+.select-wrapper{
+  display: flex;
+  padding: 0px !important; 
+  align-items: center;
+}
+
+.select-arrow {
+  padding-bottom:5px;
+}
+
+.select-wrapper select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  outline: none;
+  flex:1;
+  padding: 10px;
+  border:none;
+  color: var(--vt-c-text-dark-2);
+}
+
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+/* CHECKBOX */
+
+.wrapper-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.9rem;
+}
+
+.wrapper-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  border-radius: 2px;
+  background-color: var(--vt-c-divider-dark-2);
+  border: 1px solid var(--vt-c-divider-dark-2);
+}
+
+.wrapper-checkbox input:disabled ~ .checkmark {
+  background-color: var(--vt-c-black-soft);
+  border: 1px solid var(--vt-c-black-mute);
+  cursor: not-allowed;
+}
+
+.wrapper-checkbox input:checked ~ .checkmark {
+  background-color: var(--blue-color);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.wrapper-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrapper-checkbox .checkmark:after {
+  left: 7px;
+  top: 0px;
+  width: 7px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 40px 0;
+  }
+
+  .weapon-added > div {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+  }
+}

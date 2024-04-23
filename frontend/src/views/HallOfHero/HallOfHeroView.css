@@ -1,0 +1,45 @@
+
+.hall-container{  
+  width: 100%;
+  height: 100%;
+}
+
+.hall-container .title{
+  font-family: 'Rocher';
+  font-size: 2.5rem;
+  color: var(--green-color); 
+  text-align: center;
+  font-palette: --Green;
+}
+
+.hall-container .subtitle { 
+  font-size: 1rem;
+  color: var(--color-card-text-info);
+  display: flex;
+  justify-content: center; 
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px; 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next{
+  color: var(--green-color);
+  right: 0;
+}
+
+.swiper-button-prev { 
+  left: 0;
+  color: var(--green-color);
+} 

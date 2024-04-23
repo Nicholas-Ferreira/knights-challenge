@@ -1,0 +1,26 @@
+version: '3'
+services:
+  knights-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/usr/src/app
+
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 8081:80
+    depends_on:
+      - knights-api

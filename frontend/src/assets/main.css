@@ -1,0 +1,14 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+} 
+
+.no-select{
+  user-select: none;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
